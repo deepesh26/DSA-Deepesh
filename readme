@@ -1,6 +1,34 @@
+# Personal Learning Repository
+
+This repository contains my personal practice projects, code experiments, and learning exercises.  
+It is used only for skill development, exploring new technologies, and experimenting with different programming concepts.
+
+## Purpose
+- Improve coding skills
+- Practice version control with Git and GitHub
+- Build small demos, prototypes, and test projects
+- Learn new tools, frameworks, and programming languages
+
+## Notes
+- This repository does **not** contain any organization or client-related code.
+- All work here is purely for personal learning and experimentation.
+
+## Technologies Used
+- Add languages or tools you plan to use (e.g. Python, JavaScript, HTML/CSS, etc.)
+
+## How to Use
+1. Explore the folders for different practice exercises.
+2. Each folder may contain its own README or explanation.
+3. Feel free to use or modify the code for learning purposes.
+
+## License
+This repository is for educational use only.
+
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/deepesh26/DSA-Deepesh.git
 git push -u origin main
+
+
