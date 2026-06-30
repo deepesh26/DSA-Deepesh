@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Java Anywhere",
+      "type": "shell",
+      "command": "${workspaceFolder}/.vscode/run.sh",
+      "args": [
+        "${fileDirname}",
+        "${fileBasename}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
