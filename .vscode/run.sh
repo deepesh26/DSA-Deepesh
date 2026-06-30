@@ -2,14 +2,16 @@
 
 cd "$1"
 
-# create build folder if not exists
-mkdir -p /workspaces/DSA-Deepesh/build
+ROOT="/workspaces/DSA-Deepesh"
 
-# compile to build folder
-javac -d /workspaces/DSA-Deepesh/build "$2"
+# create build folder
+mkdir -p "$ROOT/build"
 
-# run from build folder
-java -cp /workspaces/DSA-Deepesh/build "${2%.java}" < "../../input.txt" > "../../output.txt"
+# compile
+javac -d "$ROOT/build" "$2"
 
+# get class name
+CLASS_NAME=$(basename "$2" .java)
 
-# chmod +x .vscode/run.sh give permisssion run in terminal
+# run
+java -cp "$ROOT/build" "$CLASS_NAME" < "$ROOT/TakeYouForward/input.txt" > "$ROOT/TakeYouForward/output.txt"
